@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            #projeto-form {
+                margin: 4vh 7.5vh 4vh 7.5vh 
+            }
+            #titulo {
+                padding: 0vh 8vh
+            }
+        </style>
+    </head>
+    <body>
+        {% load rest_framework %}
+
+        <h2 id='titulo' class="h2-default">Cadastrar Projeto</h2>
+
+        <form id='projeto-form'action="{% url 'cadastrar-projeto' %}" method="post" novalidate>
+            {% csrf_token %}
+            {% render_form serializer template_pack='rest_framework/vertical' %}
+            <button type="submit" class="btn btn-default">Cadastrar</button>
+        </form>
+    </body>
+</html>
