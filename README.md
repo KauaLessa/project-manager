@@ -61,7 +61,7 @@ Agora que o ambiente está configurado, você pode iniciar o servidor local do D
     ```
 
 ### Listagem de endpoints:
-Aqui estão os endpoints disponíveis no projeto, de acordo com os padrões definidos anteriormente:
+Aqui estão os endpoints disponíveis
 
     Projetos
     GET /projetos/listar - Listar todos os projetos
@@ -71,7 +71,7 @@ Aqui estão os endpoints disponíveis no projeto, de acordo com os padrões defi
     GET /projetos/<int:id>/visualizar - Visualizar detalhes de um projeto específico
     GET /projetos/<int:id>/equipe - Obter informações da equipe de um projeto
     PATCH /projetos/<int:id>/equipe/atualizar - Atualizar equipe de um projeto
-    GET /projetos/form - Exibir o formulário de criação/edição de projetos
+    GET /projetos/form - Exibir o formulário de criação de projetos
 
     Colaboradores
     GET /colaboradores/listar - Listar todos os colaboradores
