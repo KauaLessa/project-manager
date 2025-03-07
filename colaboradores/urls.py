@@ -11,7 +11,7 @@ colab_delete = ColaboradoresViewSet.as_view({'delete': 'destroy'})
 urlpatterns = [
     path('listar', colab_list, name='colab-list'),
     path('cadastrar', colab_create, name='colab-create'),
-    path('<int:pk>/vizualizar', colab_retrieve, name='colab-retrieve'),
+    path('<int:pk>/visualizar', colab_retrieve, name='colab-retrieve'),
     path('<int:pk>/editar', colab_patch, name='colab-patch'),
     path('<int:pk>/excluir', colab_delete, name='colab-delete')
 ]
